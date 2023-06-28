@@ -40,7 +40,7 @@ const News =(props)=> {
      document.title = `${capitalizeFirstLetter(props.category)} -  NewsMonkey`;
 
     updateNews();
-  }, [])
+  }, [props.category,updateNews])
   
   // async componentDidMount() {
   //   this.updateNews();
